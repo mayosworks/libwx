@@ -33,8 +33,14 @@
 
 # User-specific files
 *.rsuser
-*.suo
 *.user
+*.suo
+*.ncb
+*.pdb
+*.idb
+*.dep
+*.exp
+*.ilk
 
 # Compiled HTML
 *.chm

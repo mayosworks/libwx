@@ -17,7 +17,7 @@ template <int D = 3>
 class StackedState
 {
 public:
-	StackState()
+	StackedState()
 		: m_depth(0)
 	{
 		Clear();
