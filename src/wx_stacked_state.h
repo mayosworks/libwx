@@ -48,7 +48,7 @@ public:
 	//-------------------------------------------------------------------------
 	void Push(int state)
 	{
-		WX_ASSERT(m_state < D - 1);
+		WX_ASSERT(m_depth < D - 1);
 		if (m_depth < D - 1) {
 			m_state[++m_depth] = state;
 		}
