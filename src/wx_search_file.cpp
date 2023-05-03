@@ -156,11 +156,9 @@ bool SearchFile::FindDir(PCTSTR dir, PCTSTR cond, int depth, IFileFoundCallback*
 					PathCombine(path, dir, fd.cFileName);
 
 					// ディレクトリが見つかったらコールバック
-					if (cb->FoundDir(path, depth))
-					{
+					if (cb->FoundDir(path, depth)) {
 						// ユーザーがキャンセルしたら、falseが返ってくる
-						if (!Find(path, cond, depth + 1, cb))
-						{
+						if (!Find(path, cond, depth + 1, cb)) {
 							FindClose(hFind);
 							return false;
 						}

@@ -434,8 +434,7 @@ String String::ToLower() const
 //-----------------------------------------------------------------------------
 String String::Trim() const
 {
-	for (int i = 0; i < m_length; ++i)
-	{
+	for (int i = 0; i < m_length; ++i) {
 		if (m_string[i] != L' ') {
 			for (int j = m_length - 1; j >= i; --j) {
 				if (m_string[j] != L' ') {
